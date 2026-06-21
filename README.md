@@ -37,37 +37,11 @@ The platform features a secure **authentication system**, **per-user document is
 - Suggested questions to help you get started
 - Chat history for revisiting previous conversations
 
-## Setup
-
-1. Create and activate a Python virtual environment.
-
-   ```powershell
-   python -m venv .venv
-   .\.venv\Scripts\Activate.ps1
-   ```
-
-2. Install dependencies.
-
-   ```powershell
-   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-   ```
-
-## Run the app
-
-```powershell
-.\.venv\Scripts\python.exe -m uvicorn app:app --reload
-```
-
-Open your browser and go to:
-
-- `http://127.0.0.1:8000`
-
-or
-
-- `http://localhost:8000`
+  
 ## Document Library
 <img width="1600" height="809" alt="WhatsApp Image 2026-06-22 at 3 54 08 AM" src="https://github.com/user-attachments/assets/f15f2fdc-e3a7-4235-80d3-66ae30f97e3f" />
                 The dashboard displays key metrics — total documents, active sessions, indexed chunks, and questions asked.
+                
 ## Upload Documents
 <img width="1600" height="802" alt="WhatsApp Image 2026-06-22 at 3 54 34 AM" src="https://github.com/user-attachments/assets/0862db5b-1ce9-4cea-a696-a04b878f2ea2" />
 
@@ -76,64 +50,6 @@ or
 <img width="1600" height="817" alt="WhatsApp Image 2026-06-22 at 3 53 42 AM" src="https://github.com/user-attachments/assets/24815f22-9e68-4a78-9ede-325fbd6bfa64" />
                    Ask questions and get AI-powered answers with source references from your documents.
 
-### 🏗️ Architecture
-┌─────────────────────────────────────────────────────────────────┐
-│                         Frontend (React)                        │
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────────┐  │
-│  │Dashboard │  │ Document │  │ AI Chat  │  │ Chat History │  │
-│  │          │  │ Library  │  │          │  │              │  │
-│  └──────────┘  └──────────┘  └──────────┘  └──────────────┘  │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │ HTTP / WebSocket
-┌───────────────────────────▼─────────────────────────────────────┐
-│                    Backend (FastAPI)                            │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │                    REST API Endpoints                    │  │
-│  └──────────────────────────────────────────────────────────┘  │
-│  ┌─────────────┐  ┌─────────────┐  ┌───────────────────────┐ │
-│  │ Auth Module │  │ Document    │  │ RAG Pipeline          │ │
-│  │ (JWT/Session│  │ Processor   │  │  ┌─────────────────┐  │ │
-│  │  Tokens)    │  │  - Loaders  │  │  │ Chroma Vector   │  │ │
-│  └─────────────┘  │  - Chunking │  │  │ Store           │  │ │
-│                   │  - Embedding│  │  └─────────────────┘  │ │
-│                   └─────────────┘  │  ┌─────────────────┐  │ │
-│                                    │  │ Groq LLM        │  │ │
-│                                    │  │ (Llama 3 /      │  │ │
-│                                    │  │  Mixtral)       │  │ │
-│                                    │  └─────────────────┘  │ │
-│                                    └───────────────────────┘ │
-└───────────────────────────┬─────────────────────────────────────┘
-                            │
-┌───────────────────────────▼─────────────────────────────────────┐
-│                      Storage Layer                              │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────┐  │
-│  │   SQLite     │  │  Chroma DB   │  │  File System         │  │
-│  │  (Metadata,  │  │ (Vectors &   │  │  (Uploaded Documents)│  │
-│  │   Users,     │  │  Chunks)     │  │                      │  │
-│  │   History)   │  │              │  │                      │  │
-│  └──────────────┘  └──────────────┘  └──────────────────────┘  │
-└─────────────────────────────────────────────────────────────────┘
-
-### 📁 Project Structure
-MultiDoc_AI/
-├── app.py                     # FastAPI backend — document loading, vector store, chat API
-├── frontend/
-│   ├── src/                   # React source code
-│   │   ├── components/        # UI components (Dashboard, Chat, DocumentLibrary, etc.)
-│   │   ├── App.tsx            # Main application component
-│   │   └── main.tsx           # Entry point
-│   ├── index.html             # HTML template
-│   ├── package.json           # Frontend dependencies
-│   ├── tailwind.config.js     # Tailwind CSS configuration
-│   ├── vite.config.ts         # Vite build configuration
-│   └── tsconfig.json          # TypeScript configuration
-├── storage/
-│   ├── uploads/               # Uploaded documents (per-user)
-│   ├── chroma/                # Chroma vector store persistence
-│   └── multidoc.db            # SQLite database
-├── requirements.txt           # Python dependencies
-├── LICENSE                    # MIT License
-└── README.md                  # This file
 ### Backend Setup
 # Clone the repository
 git clone https://github.com/Abir69-bot/MultiDoc_AI.git

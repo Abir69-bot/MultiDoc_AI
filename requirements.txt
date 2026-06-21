@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+python-multipart
+langchain
+langchain-community
+langchain-groq
+langchain-chroma
+langchain-huggingface
+langchain-text-splitters
+chromadb
+sentence-transformers
+pypdf
+python-docx
+python-pptx
+pandas
+openpyxl

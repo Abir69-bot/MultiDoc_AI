@@ -1,20 +1,53 @@
-# Document Q&A Website
+Overview
+MultiDoc AI is a full-stack document intelligence platform that allows users to upload multiple documents and ask natural language questions about their content. Built with a Retrieval-Augmented Generation (RAG) architecture, it combines vector search with large language models to deliver accurate, context-aware answers.
 
-This repository contains a FastAPI backend and a simple frontend for uploading documents and asking questions about them.
+The platform features a secure authentication system, per-user document isolation, and a modern dark-mode-ready UI — making it ideal for researchers, students, and professionals who need to quickly extract insights from document collections.
 
-## Features
+✨ Features
+📄 Document Management
+Upload multiple documents simultaneously — drag & drop or click to browse
 
-- Upload multiple documents at once
-- Support for PDF, TXT, MD, HTML, DOCX, CSV, XLSX, and PPTX
-- Stores documents in-memory per browser session using a session ID
-- Uses embeddings and similarity search to answer questions from uploaded content
-- Returns a polite fallback response when the answer is not found in uploaded documents
+Support for PDF, DOCX, TXT, HTML, PPTX, XLSX, CSV, and MD files
 
-## Files
+Automatic text extraction and chunking for efficient indexing
 
-- `app.py` - FastAPI backend that loads documents, builds a Chroma vector store, and serves the chatbot API
-- `index.html` - Frontend interface for uploading files, entering the Groq API key, and chatting
-- `requirements.txt` - Python dependencies
+Per-user document library with upload history and metadata
+
+🤖 AI-Powered Q&A
+Ask natural language questions about your uploaded documents
+
+RAG pipeline retrieves relevant chunks and generates accurate answers
+
+Context-aware responses with source attribution
+
+Polite fallback when answers aren't found in your documents
+
+🔐 User Authentication
+Register and login with email/password
+
+Session-based authentication with secure tokens
+
+Per-user data isolation — your documents and chats are private
+
+Logout to end your session
+
+🎨 Modern UI/UX
+Clean, intuitive dashboard with real-time statistics
+
+Dark mode support for comfortable night-time use
+
+Responsive design works on desktop and mobile
+
+Document library with view, download, and delete actions
+
+📊 Analytics & Insights
+Track uploaded documents, indexed chunks, and questions asked
+
+Suggested questions to help you get started
+
+Chat history for revisiting previous conversations
+
+
 
 ## Setup
 
@@ -45,27 +78,6 @@ or
 
 - `http://localhost:8000`
 
-## Usage
+<img width="1600" height="809" alt="WhatsApp Image 2026-06-22 at 3 54 08 AM" src="https://github.com/user-attachments/assets/f15f2fdc-e3a7-4235-80d3-66ae30f97e3f" />
+The dashboard displays key metrics — total documents, active sessions, indexed chunks, and questions asked.
 
-1. Enter your Groq API key in the sidebar.
-2. Upload one or more supported documents.
-3. Ask a question in the chat input.
-4. If the question is not covered by uploaded documents, the app will respond with a fallback message.
-## Login Portal
-
-- Use the sidebar to register a new email and password.
-- Log in to get a session token that keeps your uploads and chat history separate.
-- Uploads and chat are protected per account.
-- Use `Logout` to end the session.
-## Notes
-
-- The app currently uses an in-memory storage approach. Restarting the backend clears all uploaded data.
-- In production, update CORS origins and do not allow `*` for security.
-- If you add more file formats, update `app.py` in `load_single_file()`.
-
-## Troubleshooting
-
-- If files fail to upload, check the browser console and backend logs.
-- Ensure your Groq API key is valid and entered correctly.
-- Make sure `uvicorn` is running before using the frontend.
-- If package install fails on Python 3.14, remove `pysqlite3-binary` from `requirements.txt` (already removed in this repo).

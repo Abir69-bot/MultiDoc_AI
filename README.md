@@ -85,8 +85,6 @@ Log in with your email and password
 
 Upload one or more documents (PDF, DOCX, TXT, etc.)
 
-Enter your Groq API key in the sidebar
-
 Ask questions in the chat input
 
 View answers with source references from your documents

@@ -79,5 +79,10 @@ or
 - `http://localhost:8000`
 
 <img width="1600" height="809" alt="WhatsApp Image 2026-06-22 at 3 54 08 AM" src="https://github.com/user-attachments/assets/f15f2fdc-e3a7-4235-80d3-66ae30f97e3f" />
-The dashboard displays key metrics — total documents, active sessions, indexed chunks, and questions asked.
+                The dashboard displays key metrics — total documents, active sessions, indexed chunks, and questions asked.
+<img width="1600" height="817" alt="WhatsApp Image 2026-06-22 at 3 53 42 AM" src="https://github.com/user-attachments/assets/e80d6823-8404-45fe-a6d7-dbc788e82090" />
+Drag & drop or click to upload multiple documents in various formats.
+<img width="1600" height="817" alt="WhatsApp Image 2026-06-22 at 3 53 42 AM" src="https://github.com/user-attachments/assets/24815f22-9e68-4a78-9ede-325fbd6bfa64" />
+Ask questions and get AI-powered answers with source references from your documents
+
 

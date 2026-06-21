@@ -1,4 +1,4 @@
-Overview
+📌 Overview
 MultiDoc AI is a full-stack document intelligence platform that allows users to upload multiple documents and ask natural language questions about their content. Built with a Retrieval-Augmented Generation (RAG) architecture, it combines vector search with large language models to deliver accurate, context-aware answers.
 
 The platform features a secure authentication system, per-user document isolation, and a modern dark-mode-ready UI — making it ideal for researchers, students, and professionals who need to quickly extract insights from document collections.

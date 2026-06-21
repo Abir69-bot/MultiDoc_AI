@@ -37,44 +37,48 @@ The platform features a secure **authentication system**, **per-user document is
 - Suggested questions to help you get started
 - Chat history for revisiting previous conversations
 
+
   
 ## Document Library
 <img width="1600" height="809" alt="WhatsApp Image 2026-06-22 at 3 54 08 AM" src="https://github.com/user-attachments/assets/f15f2fdc-e3a7-4235-80d3-66ae30f97e3f" />
-                The dashboard displays key metrics — total documents, active sessions, indexed chunks, and questions asked.
+                      The dashboard displays key metrics — total documents, active sessions, indexed chunks, and questions asked.
+                      
                 
 ## Upload Documents
 <img width="1600" height="802" alt="WhatsApp Image 2026-06-22 at 3 54 34 AM" src="https://github.com/user-attachments/assets/0862db5b-1ce9-4cea-a696-a04b878f2ea2" />
 
-                    Drag & drop or click to upload multiple documents in various formats.
+                                  Drag & drop or click to upload multiple documents in various formats.
+
+                     
 ## AI Chat Interface
 <img width="1600" height="817" alt="WhatsApp Image 2026-06-22 at 3 53 42 AM" src="https://github.com/user-attachments/assets/24815f22-9e68-4a78-9ede-325fbd6bfa64" />
-                   Ask questions and get AI-powered answers with source references from your documents.
+                                  Ask questions and get AI-powered answers with source references from your documents.
 
-### Backend Setup
-# Clone the repository
+## Backend Setup
+### Clone the repository
 git clone https://github.com/Abir69-bot/MultiDoc_AI.git
 cd MultiDoc_AI
-# Create and activate a Python virtual environment
+### Create and activate a Python virtual environment
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-# Run the FastAPI backend
+### Run the FastAPI backend
 .\.venv\Scripts\python.exe -m uvicorn app:app --reload
 
 
 The backend will be available at http://localhost:8000
 
 
-### Frontend Setup
-# Navigate to the frontend directory
+## Frontend Setup
+### Navigate to the frontend directory
 cd frontend
-# Install dependencies
+### Install dependencies
 npm install
-# Start the development server
+### Start the development server
 npm run dev
 
 The frontend will be available at http://localhost:5173
 
 
-### Using the Application
+## Using the Application
 Register a new account using the sidebar
 
 Log in with your email and password

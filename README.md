@@ -1,53 +1,41 @@
-📌 Overview
-MultiDoc AI is a full-stack document intelligence platform that allows users to upload multiple documents and ask natural language questions about their content. Built with a Retrieval-Augmented Generation (RAG) architecture, it combines vector search with large language models to deliver accurate, context-aware answers.
+# 📌 Overview
 
-The platform features a secure authentication system, per-user document isolation, and a modern dark-mode-ready UI — making it ideal for researchers, students, and professionals who need to quickly extract insights from document collections.
+**MultiDoc AI** is a full-stack document intelligence platform that allows users to upload multiple documents and ask natural language questions about their content. Built with a **Retrieval-Augmented Generation (RAG)** architecture, it combines vector search with large language models to deliver accurate, context-aware answers.
 
-✨ Features
-📄 Document Management
-Upload multiple documents simultaneously — drag & drop or click to browse
+The platform features a secure **authentication system**, **per-user document isolation**, and a modern **dark-mode-ready UI** — making it ideal for researchers, students, and professionals who need to quickly extract insights from document collections.
 
-Support for PDF, DOCX, TXT, HTML, PPTX, XLSX, CSV, and MD files
+---
 
-Automatic text extraction and chunking for efficient indexing
+## ✨ Features
 
-Per-user document library with upload history and metadata
+### 📄 Document Management
+- Upload multiple documents simultaneously — drag & drop or click to browse
+- Support for **PDF, DOCX, TXT, HTML, PPTX, XLSX, CSV, and MD** files
+- Automatic text extraction and chunking for efficient indexing
+- Per-user document library with upload history and metadata
 
-🤖 AI-Powered Q&A
-Ask natural language questions about your uploaded documents
+### 🤖 AI-Powered Q&A
+- Ask natural language questions about your uploaded documents
+- **RAG pipeline** retrieves relevant chunks and generates accurate answers
+- Context-aware responses with source attribution
+- Polite fallback when answers aren't found in your documents
 
-RAG pipeline retrieves relevant chunks and generates accurate answers
+### 🔐 User Authentication
+- Register and login with email/password
+- Session-based authentication with secure tokens
+- Per-user data isolation — your documents and chats are private
+- Logout to end your session
 
-Context-aware responses with source attribution
+### 🎨 Modern UI/UX
+- Clean, intuitive dashboard with real-time statistics
+- Dark mode support for comfortable night-time use
+- Responsive design works on desktop and mobile
+- Document library with view, download, and delete actions
 
-Polite fallback when answers aren't found in your documents
-
-🔐 User Authentication
-Register and login with email/password
-
-Session-based authentication with secure tokens
-
-Per-user data isolation — your documents and chats are private
-
-Logout to end your session
-
-🎨 Modern UI/UX
-Clean, intuitive dashboard with real-time statistics
-
-Dark mode support for comfortable night-time use
-
-Responsive design works on desktop and mobile
-
-Document library with view, download, and delete actions
-
-📊 Analytics & Insights
-Track uploaded documents, indexed chunks, and questions asked
-
-Suggested questions to help you get started
-
-Chat history for revisiting previous conversations
-
-
+### 📊 Analytics & Insights
+- Track uploaded documents, indexed chunks, and questions asked
+- Suggested questions to help you get started
+- Chat history for revisiting previous conversations
 
 ## Setup
 

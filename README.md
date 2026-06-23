@@ -36,6 +36,38 @@ The platform features a secure **authentication system**, **per-user document is
 - Track uploaded documents, indexed chunks, and questions asked
 - Suggested questions to help you get started
 - Chat history for revisiting previous conversations
+# 📁 Project Structure
+
+```text
+MultiDoc_AI/
+│
+├── backend/
+│   ├── app.py                    # FastAPI backend entry point
+│   ├── routes/                   # API endpoints
+│   ├── services/                 # Document processing & business logic
+│   ├── auth/                     # Authentication modules
+│   ├── database/                 # ChromaDB configurations
+│   └── utils/                    # Utility functions
+│
+├── frontend/
+│   ├── index.html                # Single Page Application (SPA)
+│   ├── assets/                   # CSS, JavaScript, and static files
+│   └── components/               # Reusable UI components
+│
+├── data/
+│   ├── uploads/                  # Uploaded documents
+│   ├── embeddings/               # Generated vector embeddings
+│   └── chroma_db/                # Persistent vector database
+│
+├── tests/                        # Unit and integration tests
+├── docs/                         # Technical documentation
+│
+├── requirements.txt             # Python dependencies
+├── .env.example                 # Environment variables template
+├── .gitignore                   # Git ignore rules
+├── README.md                    # Project documentation
+└── LICENSE                      # License information
+```
 
 
   

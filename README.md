@@ -79,7 +79,7 @@ MultiDoc_AI/
 ## Upload Documents
 <img width="1600" height="802" alt="WhatsApp Image 2026-06-22 at 3 54 34 AM" src="https://github.com/user-attachments/assets/0862db5b-1ce9-4cea-a696-a04b878f2ea2" />
 
-                                  Drag & drop or click to upload multiple documents in various formats.
+Drag & drop or click to upload multiple documents in various formats.
 
                      
 ## AI Chat Interface
@@ -111,15 +111,11 @@ The frontend will be available at http://localhost:5173
 
 
 ## Using the Application
-Register a new account using the sidebar
-
-Log in with your email and password
-
-Upload one or more documents (PDF, DOCX, TXT, etc.)
-
-Ask questions in the chat input
-
-View answers with source references from your documents
+- Register a new account using the sidebar
+- Log in with your email and password
+- Upload one or more documents (PDF, DOCX, TXT, etc.)
+- Ask questions in the chat input
+- View answers with source references from your documents
 
 
 
